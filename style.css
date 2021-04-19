@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+}
+
+.dotted-hr {
+    border: dotted 6px white;
+    border-bottom: none;
+    width: 100px;
+    margin: 20px auto;
+}
+
+br {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.clear-div {
+    clear: both;
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+/* navbar  style start */
+
+.navbar {
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(8, 71, 63);
+    width: 100%;
+}
+
+h1 {
+    float: left;
+    color: white;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+}
+
+.menu a {
+    float: right;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    background-color: gray;
+}
+
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* navbar  style end */
+
+
+/* <!-- profile part start --> */
+
+.profile {
+    padding-top: 20px;
+}
+
+.profile .img {
+    margin-top: 0;
+    width: 100px;
+    height: 100px;
+    transition: transform 2s;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.profile .img-div.img {
+    transition: transform 2s;
+}
+
+.profile-discription {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+.profile::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* end  profile part */
+
+
+/* start  about me part */
+
+.about-me h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.about-me {
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    ;
+}
+
+.about-me::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.aboutme-image img {
+    border: 4px solid white;
+    width: 190px;
+    height: 210px;
+    border-radius: 50%;
+}
+
+.cv-button {
+    background-color: #052d2f;
+    border: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.aboutme-hr {
+    border: none;
+    border-radius: 5px;
+    height: 3px;
+    background-color: white;
+    margin: 15px 0px;
+}
+
+
+/* end about me part */
+
+
+/* start experiences part */
+
+.professional-experience {
+    padding: 5px 1%;
+}
+
+.professional-experience .curd {
+    box-sizing: border-box;
+    background-color: #a39e9e;
+    border-radius: 6px;
+    padding: 10px;
+    padding-right: 25px;
+    transition: 0.3s;
+    height: 600px;
+    margin: 10px;
+}
+
+.curd .curd-title h2 {
+    margin: 10px;
+    background-color: #616161;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.professional-experience .curd .curd-icon img {
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    padding: 10px;
+}
+
+.professional-experience .curd .curd-discription {
+    text-align: left;
+}
+
+.professional-experience .curd:hover {
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.professional-experience::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.skill-container {
+    padding-right: 45px;
+}
+
+.skill-container li {
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.skill-container li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(125, 115, 155);
+    top: calc(100% + 5px);
+    border-radius: 5px;
+    left: 0;
+}
+
+.skill-container li::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 10px;
+    left: 0;
+    background-color: rgb(64, 37, 145);
+    top: calc(100% + 5px);
+    border-radius: 5px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.skill-container li.html::after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 90%;
+    }
+}
+
+.skill-container li.css::after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 70%;
+    }
+}
+
+.skill-container li.Bootstrap::after {
+    animation-name: Bootstrap;
+}
+
+@keyframes Bootstrap {
+    to {
+        width: 20%;
+    }
+}
+
+.skill-container li.JavaScript::after {
+    animation-name: JavaScript;
+}
+
+@keyframes JavaScript {
+    to {
+        width: 50%;
+    }
+}
+
+.skill-container li.JavaScript::after {
+    animation-name: JavaScript;
+}
+
+@keyframes JavaScript {
+    to {
+        width: 55%;
+    }
+}
+
+.skill-container li.Node::after {
+    animation-name: Node;
+}
+
+@keyframes Node {
+    to {
+        width: 80%;
+    }
+}
+
+
+/* end experiences part */
+
+
+/* <!-- start contract me part  --> */
+
+.contact-container {
+    box-sizing: border-box;
+    background-image: url("images/contact.jpg");
+    display: cover;
+    margin: 20px;
+    width: 100%;
+}
+
+.contact-title h3 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.contact {
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.form-one {
+    box-sizing: border-box;
+}
+
+.form-one input {
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    color: aliceblue;
+}
+
+.form-two {
+    box-sizing: border-box;
+}
+
+.form-two textarea {
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 97%;
+    height: 122px;
+    margin-left: 10px;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn button {
+    height: 40px;
+    width: 100px;
+    background-color: rgb(53, 53, 233);
+    font-size: 1.2rem;
+    border: none;
+}
+
+.contact-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.address-div {
+    text-align: center;
+    color: aliceblue;
+}
+
+.address {
+    margin-bottom: 50px;
+}
+
+.col-2 {
+    width: 12.50%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}

@@ -1,0 +1,43 @@
+@media only screen and (min-width: 992px) {
+    /*navbar start  */
+    [class*="col-"] {
+        box-sizing: border-box;
+        float: left;
+    }
+    .col-2 {
+        float: left;
+        padding-left: 50px;
+    }
+    /* navbar end */
+    .profile-discription {
+        text-align: center;
+        font-size: 3rem;
+    }
+    .menu {
+        box-sizing: border-box;
+        margin-right: 10px;
+    }
+    .profile p {
+        text-align: center;
+    }
+    .img-div #i {
+        float: right;
+    }
+    .img-div {
+        padding-top: 0px;
+    }
+    .information {
+        text-align: center;
+        margin: 0;
+    }
+    /* start  about me part */
+    .aboutme-image img {
+        margin-top: 50px;
+    }
+    /* end about me part */
+    /* start exprience part */
+    .professional-experience .curd .curd-icon {
+        text-align: center;
+    }
+    /* end experience part */
+}

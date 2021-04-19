@@ -1,0 +1,20 @@
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .menu a {
+        background-color: rgb(156, 56, 228);
+        margin: 5px;
+        border-radius: 6px;
+        text-align: center;
+    }
+    /* start  about me part */
+    /* end about me part */
+}
+
+<div class="col-12 "><form><input type="text " name="name " placeholder="enter your name "><input type="email " name="email " placeholder="enter your valid email "><input type="tel " name="phone " placeholder="enter your phone number "></div><!-- form 2 --><div class="col-6 "><div class="containt"><textarea name="message " placeholder="enter your messages "></textarea></div></div><button class="btn" style="border-radius: 5px;">Submit</button></form><div><div class="col "><i class="far fa-map"></i><h6>address</h6><h6 style="margin-bottom: 30px;">bangladesh</h6></div><div class="col "><i class="far fa-envelope"></i><h6>email</h6><h6 style="margin-bottom: 30px;">nurnobi1966@gmail.com</h6></div><div class="col "><i class="fas fa-mobile-alt"></i><h6>phone</h6><h6 style="margin-bottom: 30px;">01931360767</h6></div>

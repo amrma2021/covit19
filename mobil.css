@@ -1,0 +1,50 @@
+        @media only screen and (max-width: 600px) {
+            /*navbar start  */
+            [class*="col-"] {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                /* text-align: center; */
+            }
+            .menu {
+                box-sizing: border-box;
+            }
+            .menu a {
+                background-color: rgb(156, 56, 228);
+                margin: 5px;
+                border-radius: 6px;
+                text-align: center;
+            }
+            /* navbar end */
+            .profile {
+                text-align: center;
+            }
+            .profile-discription {
+                font-family: 'Dancing Script', cursive;
+                font-size: 2rem;
+            }
+            /* start  about me part */
+            .about-me p {
+                text-align: center;
+                font-size: 1rem;
+            }
+            .aboutme-image img {
+                border: 4px solid white;
+                width: 150px;
+                height: 170px;
+                border-radius: 50%;
+            }
+            /* end about me part */
+            /* contact me part start */
+            .btn {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .contact-container {
+                background-image: url("images/contact.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            /* contact me part end */
+        }
